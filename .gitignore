@@ -1,0 +1,65 @@
+# ==========================
+# Composer
+# ==========================
+/vendor/
+composer.phar
+
+# ==========================
+# Environment
+# ==========================
+.env
+.env.*
+!.env.example
+
+# ==========================
+# Logs
+# ==========================
+*.log
+logs/
+storage/logs/
+tmp/
+cache/
+
+# ==========================
+# OS
+# ==========================
+.DS_Store
+Thumbs.db
+
+# ==========================
+# PHPUnit
+# ==========================
+.phpunit.result.cache
+coverage/
+.clover.xml
+
+# ==========================
+# PHP CS Fixer / Pint
+# ==========================
+.php-cs-fixer.cache
+.pint.cache
+
+# ==========================
+# Docker
+# ==========================
+docker-compose.override.yml
+
+# Arquivos locais do Docker
+docker/*.log
+docker/data/
+docker/mysql/
+docker/postgres/
+docker/redis/
+
+# ==========================
+# Build / Cache
+# ==========================
+/public/hot
+/public/build
+node_modules/
+
+# ==========================
+# Misc
+# ==========================
+*.bak
+*.tmp

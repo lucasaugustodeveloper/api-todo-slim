@@ -1,0 +1,32 @@
+services:
+    app:
+        build: .
+        container_name: api-slim
+        ports:
+            - 8090:80
+        volumes:
+            - ./src:/var/www/html
+            - vendor:/var/www/html/vendor
+        environment:
+            APP_ENV: development
+        depends_on:
+            - database
+        networks:
+            - todo-slim
+
+    database:
+        image: postgres:13-alpine
+        ports:
+            - 5432:5432
+        environment:
+            - POSTGRES_PASSWORD=example
+            - POSTGRES_USER=example
+            - POSTGRES_DB=todo
+        networks:
+            - todo-slim
+
+networks:
+    todo-slim:
+
+volumes:
+    vendor:
