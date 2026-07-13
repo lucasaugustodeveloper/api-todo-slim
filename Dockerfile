@@ -9,7 +9,7 @@ RUN composer install \
     --optimize-autoloader \
     --no-interaction
 
-COPY src ./src
+COPY . .
 
 FROM php:8.3-apache
 

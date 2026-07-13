@@ -6,7 +6,6 @@ services:
             - 8090:80
         volumes:
             - .:/var/www/html
-            - vendor:/var/www/html/vendor
         environment:
             APP_ENV: development
         depends_on:
@@ -27,6 +26,3 @@ services:
 
 networks:
     todo-slim:
-
-volumes:
-    vendor:
