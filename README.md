@@ -7,7 +7,6 @@
 ├── 📁 Routes
 │   ├── 🐘 root.php
 │   ├── 🐘 todos.php
-│   └── 🐘 users.php
 ├── 📁 app
 │   ├── 🐘 app.php
 │   ├── 🐘 dependencies.php
