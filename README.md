@@ -1,6 +1,5 @@
 # API TODO SLIM
 
-**Generated:** 7/9/2026, 1:49:28 PM
 **Root Path:** `api-todo-slim`
 
 ```
@@ -9,7 +8,9 @@
 │   ├── 🐘 todos.php
 ├── 📁 app
 │   ├── 🐘 app.php
+│   ├── 🐘 container.php
 │   ├── 🐘 dependencies.php
+│   ├── 🐘 dependencies.testing.php
 │   ├── 🐘 middleware.php
 │   ├── 🐘 routes.php
 │   └── 🐘 settings.php
@@ -22,6 +23,9 @@
 │   ├── ⚙️ .htaccess
 │   └── 🐘 index.php
 ├── 📁 src
+│   ├── 📁 Contracts
+│   │   └── 📁 Repository
+│   │       └── 🐘 TodoRepositoryInterface.php
 │   ├── 📁 Controllers
 │   │   └── 🐘 TodoController.php
 │   ├── 📁 DTO
@@ -33,20 +37,25 @@
 │   │   └── 🐘 Todo.php
 │   ├── 📁 Repositories
 │   │   ├── 🐘 MemoryTodoRepository.php
-│   │   └── 🐘 TodoRepositoryInterface.php
+│   │   └── 🐘 PostgresTodoRepository.php
 │   └── 📁 Services
 │       └── 🐘 TodoService.php
 ├── 📁 tests
+│   ├── 📁 Fakes
+│   │   └── 🐘 FakeTodoRepository.php
 │   ├── 📁 Integration
 │   │   └── 🐘 TodoRoutesTest.php
 │   ├── 📁 Unit
 │   │   └── 🐘 ExampleTest.php
-│   └── 🐘 TestCase.php
+│   ├── 🐘 TestCase.php
+│   └── 🐘 bootstrap.php
 ├── 📁 vendor
 ├── ⚙️ .editorconfig
+├── ⚙️ .env.example
 ├── ⚙️ .gitignore
 ├── 🐳 Dockerfile
 ├── 📝 README.md
+├── 📄 AGENTS.md
 ├── ⚙️ composer.json
 ├── ⚙️ docker-compose.yml
 └── ⚙️ phpunit.xml
